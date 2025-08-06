@@ -194,6 +194,63 @@ body {
 }
 
 
+
+.wishlist-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.wishlist-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.wishlist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.wishlist-item img {
+  height: 80px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.wishlist-item h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.wishlist-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.wishlist-item button {
+  margin-left: auto;
+  background: #d00000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.wishlist-item button:hover {
+  background: #9d0208;
+}
+
 .auth-card {
   max-width: 400px;
   margin: 4rem auto;
