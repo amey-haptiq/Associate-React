@@ -19,7 +19,7 @@ const Products = () => {
       {products.length===0 ? <h1>Something went wrong</h1>:
       products.map(product => (
         <div key={product.id} className="product-card">
-          <img src={product.image} />
+          <img src={product.image} alt={product.title} />
           <h4>{product.title}</h4>
           <p>${product.price}</p>
           <button onClick={() => dispatch(addToWishlist(product))}>Add to Wishlist </button>
