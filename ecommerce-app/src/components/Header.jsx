@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 const Header = () => {
   const cartItems = useSelector(state => state.cart);
-  const wishlistItems=useSelector(state=>state.wishlist)
+  const wishlistItems = useSelector(state => state.wishlist)
 
   return (
     <header className="header">
