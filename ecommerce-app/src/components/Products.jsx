@@ -16,7 +16,7 @@ const Products = () => {
   return (
     <div className="products-grid">
 
-      {products.length==0 ? <h1>Something went wrong</h1>:
+      {products.length===0 ? <h1>Something went wrong</h1>:
       products.map(product => (
         <div key={product.id} className="product-card">
           <img src={product.image} />
