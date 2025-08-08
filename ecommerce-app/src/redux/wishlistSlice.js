@@ -16,6 +16,7 @@ const wishlistSlice=createSlice({
             if(item){
                return state.filter(item=>item.id!==action.payload.id)
             }
+            return state;
         },
     },
 });
