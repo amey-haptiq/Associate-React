@@ -12,7 +12,7 @@ const Cart = () => {
       {wishlistItems.length === 0 ? <p>Don't have any thing in your wishlist</p> : (
         wishlistItems.map(item => (
           <div key={item.id} className="wishlist-item">
-            <img src={item.image} />
+            <img src={item.image} alt={item.title} />
             <div>
               <h4>{item.title}</h4>
               <p>${item.price}</p>
