@@ -5,7 +5,7 @@ import { removeFromCart } from '../../redux/cartSlice.js';
 const Cart = () => {
   const cartItems = useSelector(state => state.cart);
   const dispatch = useDispatch();
-  let totalCart=cartItems.reduce((amount,item)=>{ return amount+(item.price*(item.quantity || 1));},0);
+  let totalCart = cartItems.reduce((amount, item) => { return amount + (item.price * (item.quantity || 1)); }, 0);
 
   return (
     <div className="cart-container">
