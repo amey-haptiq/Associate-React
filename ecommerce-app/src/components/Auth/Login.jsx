@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
+const Login = ({setLogin}) => {
   const [user, setUser] = useState({ username: '', password: '' });
   const navigate = useNavigate();
 
   const handleLogin = () => {
     if (user.username === 'amey' && user.password === 'amey123') {
       alert('Login successful!');
+      
+      sessionStorage.setItem('user', user.username);
       navigate('/');
+
     } else {
       alert('Invalid credentials!');
       navigate('/login')
